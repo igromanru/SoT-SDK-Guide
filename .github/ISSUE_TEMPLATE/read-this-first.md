@@ -1,6 +1,6 @@
 ---
-name: Read this before create a new issue
-about: Describe this issue template's purpose here.
+name: Read this first!
+about: 
 title: ''
 labels: ''
 assignees: ''
