@@ -13,6 +13,7 @@
 * [Actors and their usage](sites/Actors.md)
 * [Functions and their usage](sites/Functions.md)
 * [Features](sites/Features.md)
+* [Credits](#credits)
 
 ## SDK
 [SoT SDK Dump](https://github.com/pubgsdk/SoT-SDK)  
@@ -108,3 +109,9 @@ To get a font:
 ```cpp
 auto font = UObject::FindObject<UFont>("Font Roboto.Roboto");
 ```
+
+
+## Credits
+Name | Reason
+---- | ---------
+igromanru | SDK Dump, this guide and most infromation
