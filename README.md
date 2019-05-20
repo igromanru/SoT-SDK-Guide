@@ -54,6 +54,18 @@ auto AthenaGameViewportClient = UObject::FindObject<UAthenaGameViewportClient>("
 const size_t PostRenderIndex = 87;
 const auto vmtPostRender  = *reinterpret_cast<uintptr_t***>(AthenaGameViewportClient) + PostRenderIndex;
 ```
+#### PostRender hook
+```cpp
+typedef void(__thiscall *tPostRender)(UGameViewportClient* uObject, UCanvas* Canvas);
+tPostRender OriginalPostRender;
+
+// Function that got called at the end of rendering, perfect to draw our overlay
+void HookedPostRender(UGameViewportClient* thisPointer, UCanvas* canvas)
+{			
+    // our code here (Overlay, ESP etc.)
+    OriginalPostRender(thisPointer, canvas);
+}
+```
 
 ## Get UWord and GameInstance
 ```cpp
@@ -80,6 +92,7 @@ auto localPlayerActor = (AAthenaPlayerCharacter*)playerController->Pawn;
 auto localPlayerActor = (AAthenaPlayerCharacter*)playerController->K2_GetPawn();
 ```
 ## Fonts
+Available fonts / UFont names
 ```
 Font Engine.Default__Font
 Font Roboto.Roboto
