@@ -1,5 +1,8 @@
 
 # Functions and their usage
+* [Back to main page](README.md)
+* [Useful functions]()
+* Usage
 
 ## Useful functions
 Function | Description

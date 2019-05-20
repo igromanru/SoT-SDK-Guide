@@ -1,5 +1,8 @@
 
 # Actors and their usage
+* [Back to main page](README.md)
+* [Useful Objects list]()
+* Usage
 
 ## Useful Objects list
 Class | Description
