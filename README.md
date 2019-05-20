@@ -115,3 +115,7 @@ auto font = UObject::FindObject<UFont>("Font Roboto.Roboto");
 Name | Reason
 ---- | ---------
 igromanru | SDK Dump, this guide and most infromation
+gummy8unny | Open source external, Ship water level and many other contibutions
+xyz12 | Help with compilable SDK, public release and many other contibutions
+Janck7 | Bones dump, hits to some functions, his ReClass file
+sotgamer91 | TableMap pins, Levels array and other contibutions
