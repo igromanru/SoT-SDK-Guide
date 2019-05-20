@@ -1,6 +1,6 @@
 ---
 name: Read this first!
-about: 
+about: Issue creating rules
 title: ''
 labels: ''
 assignees: ''
