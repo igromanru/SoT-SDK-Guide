@@ -12,6 +12,7 @@
 * [Engine Drawing](sites/EngineDrawing.md)
 * [Actors and their usage](sites/Actors.md)
 * [Functions and their usage](sites/Functions.md)
+* [Features](sites/Features.md)
 
 ## SDK
 [SoT SDK Dump](https://github.com/pubgsdk/SoT-SDK)  
