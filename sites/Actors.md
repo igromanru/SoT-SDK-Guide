@@ -36,3 +36,11 @@ ACookingPot | Cooking pot actor (on ships and islands)
 AFishingFish | Fish actor that spawns while someone is fishing
 ABP_AmmoChest_C | Ammo chest (ships and islands)
 AVolcano | Volcano actor
+
+
+## Actors name filter
+Object | Search Strings
+------ | ----------------
+Sapphire Gem | MermaidGem, Sapphire
+Emerald Gem | MermaidGem, Emerald
+Ruby Gem | MermaidGem, Ruby
