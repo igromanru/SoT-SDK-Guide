@@ -21,6 +21,7 @@ URotationMaths::RotatorToQuat | Convert FRotator to FQuat
 The class got a lot of math functions to work with algebra in UE.
 
 **Some useful functions, see in the SDK for more:**
+
 Function | Description
 -------- | ----------------
 FindLookAtRotation | Find a rotation for an object at Start location to point at Target location. (good for aimbot)
