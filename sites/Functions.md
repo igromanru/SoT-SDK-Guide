@@ -20,7 +20,7 @@ URotationMaths::RotatorToQuat | Convert FRotator to FQuat
 #### UKismetMathLibrary
 The class got a lot of math functions to work with algebra in UE.
 
-**Some useful functions, see in the SDK for more:**
+**Some useful functions, look in the SDK for more:**
 
 Function | Description
 -------- | ----------------
