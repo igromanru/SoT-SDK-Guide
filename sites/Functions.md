@@ -19,6 +19,7 @@ URotationMaths::RotatorToQuat | Convert FRotator to FQuat
 ## Math classes
 #### UKismetMathLibrary
 The class got a lot of math functions to work with algebra in UE.
+
 Function | Description
 -------- | ----------------
 FindLookAtRotation | Find a rotation for an object at Start location to point at Target location. (good for aimbot)
