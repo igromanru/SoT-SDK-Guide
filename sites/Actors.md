@@ -1,7 +1,7 @@
 
 # Actors and their usage
 * [Back to main page](README.md)
-* [Useful Objects list]()
+* [Useful Objects list](#useful-objects-list)
 * Usage
 
 ## Useful Objects list
