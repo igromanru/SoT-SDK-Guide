@@ -2,7 +2,7 @@
 # Functions and their usage
 * [Back to main page](README.md)
 * [Useful functions](#useful-functions)
-* [Math classes]()
+* [Math classes](#math-classes)
 * Usage
 
 ## Useful functions

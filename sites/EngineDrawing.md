@@ -1,8 +1,13 @@
 
 # Engine Drawing
 * [Back to main page](README.md)
-* [Draw with UCanvas]()
-* [Use AHUD to draw]()
+* [Draw with UCanvas](#draw-with-ucanvas)
+  * [Draw a text]()
+  * [Draw a line]()
+  * [Draw a box]()
+* [Use AHUD to draw](#use-ahud-to-draw)
+  * [Get AHUD]()
+  * [Draw a rectangle]()
 
 ## Draw with UCanvas
 If we hook the PostRender function from UGameViewportClient, we got a UCanvas pointer that comes as parameter.

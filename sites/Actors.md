@@ -2,6 +2,7 @@
 # Actors and their usage
 * [Back to main page](README.md)
 * [Useful Objects list](#useful-objects-list)
+* [Actors name filter](#actors-name-filter)
 * Usage
 
 ## Useful Objects list
