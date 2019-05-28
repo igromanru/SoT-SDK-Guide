@@ -27,6 +27,7 @@ Function | Description
 -------- | ----------------
 FindLookAtRotation | Find a rotation for an object at Start location to point at Target location. (good for aimbot)
 Conv_VectorToRotator | Return the FRotator orientation corresponding to the direction in which the vector points. (Conv_VectorToRotator(targetLocation - cameraLocation) rotation for an aimbot)
+Dot_VectorVector | Returns the dot product of two 3d vectors
 GetHours | Returns hours as int from a FTimespan
 GetMinutes | Returns minutes as int from a FTimespan
 GetSeconds | Returns seconds as int from a FTimespan
