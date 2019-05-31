@@ -5,6 +5,7 @@
 * General Information
   * [SDK Dump](#sdk)
   * [FindPattern Signatures](#findpattern-signatures)
+  * [Distance to Meter scale](#distance-to-meter-scale)
   * [Get UAthenaGameViewportClient and PostRender address](#get-uathenagameviewportclient-and-postrender-address)
   * [Get UWord and GameInstance](#get-uword-and-gameinstance)
   * [ULocalPlayer, APlayerController and AAthenaPlayerCharacter from LocalPlayer](#ulocalplayer-aplayercontroller-and-aathenaplayercharacter-from-localplayer)
@@ -19,7 +20,7 @@
 [SoT SDK Dump](https://github.com/pubgsdk/SoT-SDK)  
 
 ## FindPattern Signatures
-**v2.0.2**
+**v2.0.3**
 ```
 GObjects:
 89 0D ? ? ? ? 48 8B DF 48 C1 E3 04 33 D2
@@ -46,6 +47,15 @@ xxx????xxxxx????xxxxxxxx
 \x48\x8B\x35\x00\x00\x00\x00\x33\xDB, xxx????xx
 UEngine* Engine;
 Engine = *reinterpret_cast<UEngine**>(Address + *reinterpret_cast<DWORD*>(Address + 3) + 7);
+```
+
+## Distance to Meter scale
+The distance scale in UE4 is 100 units = 1m.  
+So distance between two FVector's * 0.01f = distance in meter  
+(You can also use / 100.f, but multiplication is faster than division and has no problems with 0)
+```cpp
+auto DistanceScale = 0.01f;
+auto distanceInMeter = UVectorMaths::Distance(cameraLocation, enemyLocation) * DistanceScale;
 ```
 
 ## Get UAthenaGameViewportClient and PostRender address
