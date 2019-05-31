@@ -43,10 +43,10 @@ offset = address + 3
 \x48\x8B\x0D\x00\x00\x00\x00\x48\x8B\x01\xFF\x90\x00\x00\x00\x00\x48\x8B\xF8\x33\xD2\x48\x8D\x4E
 xxx????xxxxx????xxxxxxxx
 
+UEngine:
 48 8B 35 ? ? ? ? 33 DB
 \x48\x8B\x35\x00\x00\x00\x00\x33\xDB, xxx????xx
-UEngine* Engine;
-Engine = *reinterpret_cast<UEngine**>(Address + *reinterpret_cast<DWORD*>(Address + 3) + 7);
+UEngine* Engine = *reinterpret_cast<UEngine**>(Address + *reinterpret_cast<DWORD*>(Address + 3) + 7);;
 ```
 
 ## Distance to Meter scale
