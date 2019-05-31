@@ -106,7 +106,7 @@ Magma's Grail | {"Treasure", "Artifact", "DVR_Mythical"}
 ```cpp
 bool CompareActor(std::string actorName, std::vector<std::string> searchStrings)
 {
-    auto offset = std::string::npos;
+    size_t offset = 0;
     for (auto &search : searchStrings)
     {
         offset = actorName.find(search);
