@@ -20,7 +20,7 @@
 [SoT SDK Dump](https://github.com/pubgsdk/SoT-SDK)  
 
 ## FindPattern Signatures
-**v2.0.7**
+**v2.0.8**
 ```
 GObjects:
 89 0D ? ? ? ? 48 8B DF 48 C1 E3 04 33 D2
@@ -46,7 +46,17 @@ xxx????xxxxx????xxxxxxxx
 UEngine:
 48 8B 35 ? ? ? ? 33 DB
 \x48\x8B\x35\x00\x00\x00\x00\x33\xDB, xxx????xx
-UEngine* Engine = *reinterpret_cast<UEngine**>(Address + *reinterpret_cast<DWORD*>(Address + 3) + 7);;
+UEngine* Engine = *reinterpret_cast<UEngine**>(Address + *reinterpret_cast<DWORD*>(Address + 3) + 7);
+```
+
+**v2.0.8.2 (insider difference)**
+```
+GObjects:
+89 0D ? ? ? ? 48 8B DF 48 89 5C 24
+offset = address + 2
+(UObject::GObjects)address + 6 + offset
+\x89\x0D\x00\x00\x00\x00\x48\x8B\xDF\x48\x89\x5C\x24
+xx????xxxxxxx
 ```
 
 ## Distance to Meter scale
