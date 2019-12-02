@@ -6,6 +6,7 @@
   * [SDK Dump](#sdk)
   * [FindPattern Signatures](#findpattern-signatures)
   * [Distance to Meter scale](#distance-to-meter-scale)
+  * [Actor Array location](#actor-array-location)
   * [Get UAthenaGameViewportClient and PostRender address](#get-uathenagameviewportclient-and-postrender-address)
   * [Get UWord and GameInstance](#get-uword-and-gameinstance)
   * [ULocalPlayer, APlayerController and AAthenaPlayerCharacter from LocalPlayer](#ulocalplayer-aplayercontroller-and-aathenaplayercharacter-from-localplayer)
@@ -51,6 +52,29 @@ So distance between two FVector's * 0.01f = distance in meter
 ```cpp
 auto DistanceScale = 0.01f;
 auto distanceInMeter = UVectorMaths::Distance(cameraLocation, enemyLocation) * DistanceScale;
+```
+
+## Actor Array location
+Like in all other UE4 games, the actor array is in ULevel under offset **0xA0**.  
+The SDK Generator can't find it, so it's always hidden in UnknownData bytes block.  
+It has to be fixed manually.  
+Create a second UnknownData that will be placed under the actor array, change the size of UnknownData00 and add the actor array.  
+**Caclucalting**  
+UnknownData00 new size = AActors offset - UnknownData00 offset  
+UnknownData10 offset = AActors offset + AActors size  
+UnknownData10 size = ActorCluster offset - UnknownData10 offset  
+
+Before:
+```cpp
+unsigned char                                      UnknownData00[0xA0];                                      // 0x0028(0x00A0) MISSED OFFSET
+class ULevelActorContainer*                        ActorCluster;                                             // 0x00C8(0x0008)
+```
+After:
+```cpp
+unsigned char                                      UnknownData00[0x78];                                      // 0x0028(0x0078) MISSED OFFSET
+TArray<class AActor*>                              AActors;                                                  // 0x00A0(0x0010)
+unsigned char                                      UnknownData10[0x18];                                      // 0x00B0(0x0018) MISSED OFFSET
+class ULevelActorContainer*                        ActorCluster;                                             // 0x00C8(0x0008)
 ```
 
 ## Get UAthenaGameViewportClient and PostRender address
