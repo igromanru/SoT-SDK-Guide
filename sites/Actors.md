@@ -20,6 +20,7 @@ ATreasureChest | Base class for chests
 AMerchantCrate, AStaticMerchantCrate | Base class for merchant stuff (boxes, cages, gunpowder etc.)
 ABountyReward | Skulls base actor
 AStaticSimpleBootyWieldableItem, ASimpleBootyWieldableItem | base actor for some wieldable items
+AStorageCrateItemProxy | base actor for the Storage Crate
 AShip | Ship's actor
 AShipNetProxy | Draws instead of AShip after about 1500 meters.
 ARowboat | Rowboats actor
@@ -61,6 +62,7 @@ Skeleton Captain's Chest | {"TreasureChest", "AIShip"}
 Stronghold Gunpowder | {"BigGunpowderBarrel"}
 Gunpowder | {"GunpowderBarrel"}
 Banana Crate / Fruit Crate | {"BananaCrate"}
+Storage Crate | {"AnyItemCrate"}
 Cannonball Crate | {"CannonballCrate"}			
 Wood Crate | {"WoodCrate"}
 Fine Sugar | {"SugarCrate"}
