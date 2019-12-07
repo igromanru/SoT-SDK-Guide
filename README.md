@@ -122,6 +122,8 @@ auto localPlayerActor = (AAthenaPlayerCharacter*)playerController->Pawn;
 auto localPlayerActor = (AAthenaPlayerCharacter*)playerController->K2_GetPawn();
 ```
 ## Fonts
+Two methods to get a font for engine drawing.
+#### 1. Find a font object by name
 Available fonts / UFont names
 ```
 Font Engine.Default__Font
@@ -138,7 +140,14 @@ To get a font:
 ```cpp
 auto font = UObject::FindObject<UFont>("Font Roboto.Roboto");
 ```
-
+#### 2. Get a font from the UEngine
+Each UE4 game got an instance of the UEngine class with default fonts set.
+The [UAthenaGameEngine](#get-uathenagameviewportclient-and-postrender-address) class derives from UEngine.  
+Get a default font from UAthenaGameEngine:
+```cpp
+auto font = AthenaGameEngine->MediumFont;
+```
+Check out the UEngine class in the SoT SDK dump for more fonts.
 
 ## Credits
 Name | Reason
