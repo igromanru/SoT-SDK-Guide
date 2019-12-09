@@ -22,13 +22,13 @@ canvas->K2_DrawText(defaultFont, FString(myText.c_str()), FVector2D(100, 100), W
 ```
 
 #### Draw a line
-UCanvas*->K2_DrawText
+UCanvas*->K2_DrawLine
 ```cpp
 FLinearColor white(1.f,1.f,1.f,1.f);
 canvas->K2_DrawLine(FVector2D(10, 10), FVector2D(100, 100), 1.f, white);
 ```
 #### Draw a box
-UCanvas*->K2_DrawText can draw only white boxes, so we have make an own function. 
+UCanvas*->K2_DrawBox can draw only white boxes, so we have make an own function. 
 
 ```cpp
 void DrawBox(UCanvas* canvas, const FVector2D& min, const FVector2D& max, const FLinearColor& color, float thickness)
@@ -47,10 +47,10 @@ DrawBox(canvas, FVector2D(10, 10), FVector2D(100, 100), red, 1.f);
 Assign the current UCanvas from the PostRender function, then you can draw with AHUD.
 #### Get AHUD
 ```cpp
-PlayerControlle->MyHUD
+PlayerController->MyHUD
 ```
 #### Draw a rectangle
 ```cpp
-PlayerControlle->MyHUD->Canvas = canvas;
-PlayerControlle->MyHUD->DrawRect(color, x, y, width, heigth);
+PlayerController->MyHUD->Canvas = canvas;
+PlayerController->MyHUD->DrawRect(color, x, y, width, heigth);
 ```
