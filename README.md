@@ -21,7 +21,7 @@
 [SoT SDK Dump](https://github.com/pubgsdk/SoT-SDK)  
 
 ## FindPattern Signatures
-**v2.0.9**
+**v2.0.10**
 ```
 GObjects:
 89 0D ? ? ? ? 48 8B DF 48 89 5C 24
@@ -38,11 +38,11 @@ offset = address + 3
 xxx????xx?xx
 
 UWorld:
-48 8B 0D ? ? ? ? 48 8B 01 FF 90 ? ? ? ? 48 8B F8 33 D2 48 8D 4E
+48 8B 05 ? ? ? ? 48 8B 88 ? ? ? ? 48 85 C9 74 06 48 8B 49 70
 offset = address + 3
 (UWorld)(*)address + 7 + offset
-\x48\x8B\x0D\x00\x00\x00\x00\x48\x8B\x01\xFF\x90\x00\x00\x00\x00\x48\x8B\xF8\x33\xD2\x48\x8D\x4E
-xxx????xxxxx????xxxxxxxx
+\x48\x8B\x05\x00\x00\x00\x00\x48\x8B\x88\x00\x00\x00\x00\x48\x85\xC9\x74\x06\x48\x8B\x49\x70
+xxx????xxx????xxxxxxxxx
 ```
 
 ## Distance to Meter scale
