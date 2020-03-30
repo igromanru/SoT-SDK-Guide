@@ -59,7 +59,7 @@ Like in all other UE4 games, the actor array is in ULevel under offset **0xA0**.
 The SDK Generator can't find it, so it's always hidden in UnknownData bytes block.  
 It has to be fixed manually.  
 Create a second UnknownData that will be placed under the actor array, change the size of UnknownData00 and add the actor array.  
-**Caclucalting**  
+**Calculating**  
 UnknownData00 new size = AActors offset - UnknownData00 offset  
 UnknownData10 offset = AActors offset + AActors size  
 UnknownData10 size = ActorCluster offset - UnknownData10 offset  
@@ -152,11 +152,11 @@ Check out the UEngine class in the SoT SDK dump for more fonts.
 ## Credits
 Name | Reason
 ---- | ---------
-igromanru | SDK Dump, this guide and most infromation
-gummy8unny | Open source external, Ship water level and many other contibutions
-xyz12 | Help with compilable SDK, public release and many other contibutions
+igromanru | SDK Dump, this guide and most in information
+gummy8unny | Open source external, Ship water level and many other contributions
+xyz12 | Help with compilable SDK, public release and many other contributions
 Janck7 | Bones dump, hints for some functions, his ReClass file
-sotgamer91 | TableMap pins, Levels array and other contibutions
+sotgamer91 | TableMap pins, Levels array and other contributions
 
 ### Special thanks to the OSH Community
 Name | Reason
