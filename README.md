@@ -162,6 +162,6 @@ sotgamer91 | TableMap pins, Levels array and other contibutions
 Name | Reason
 ---- | ---------
 KN4CK3R | SDK Generator and <span>ReClass</span>.NET
-Dr.Pepper | Help with SDK Generator, Unreal Engine, C++ and ASM
+Dr_P3pp3r | Help with SDK Generator, Unreal Engine, C++ and ASM
 SilverDeath | C++, ASM, Math and some UE SDK stuff
 Jeon | C++ and ASM
