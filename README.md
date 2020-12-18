@@ -21,7 +21,7 @@
 [SoT SDK Dump](https://github.com/pubgsdk/SoT-SDK)  
 
 ## FindPattern Signatures
-**v2.0.19**
+**v2.0.20**
 ```
 GObjects:
 89 0D ? ? ? ? 48 8B DF 48 89 5C 24
