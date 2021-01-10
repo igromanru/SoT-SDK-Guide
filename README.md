@@ -21,7 +21,7 @@
 [SoT SDK Dump](https://github.com/pubgsdk/SoT-SDK)  
 
 ## FindPattern Signatures
-**v2.0.20**
+**v2.0.20 Microsoft Store and Steam compatible**
 ```
 GObjects:
 89 0D ? ? ? ? 48 8B DF 48 89 5C 24
@@ -31,11 +31,11 @@ offset = address + 2
 xx????xxxxxxx
 
 GNames
-48 8B 1D ? ? ? ? 48 85 ? 75 3A
+48 8B 1D ? ? ? ? 48 85 DB 75 ? B9 08 04 00 00
 offset = address + 3
 ((FName::GNames))(*)address + 7 + offset
-\x48\x8B\x1D\x00\x00\x00\x00\x48\x85\x00\x75\x3A
-xxx????xx?xx
+\x48\x8B\x1D\x00\x00\x00\x00\x48\x85\xDB\x75\x00\xB9\x08\x04\x00\x00
+xxx????xxxx?xxxxx
 
 UWorld:
 48 8B 05 ? ? ? ? 48 8B 88 ? ? ? ? 48 85 C9 74 06 48 8B 49 70
