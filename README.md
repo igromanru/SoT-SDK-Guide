@@ -26,7 +26,7 @@
 GObjects:
 89 0D ? ? ? ? 48 8B DF 48 89 5C 24
 offset = address + 2
-(UObject::GObjects)address + 6 + offset
+(UObject::GObjects)address + 22 + offset
 \x89\x0D\x00\x00\x00\x00\x48\x8B\xDF\x48\x89\x5C\x24
 xx????xxxxxxx
 
