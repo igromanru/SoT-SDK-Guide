@@ -81,7 +81,7 @@ class ULevelActorContainer*                        ActorCluster;                
 ```cpp
 auto AthenaGameViewportClient = UObject::FindObject<UAthenaGameViewportClient>("AthenaGameViewportClient Transient.AthenaGameEngine_1.AthenaGameViewportClient_1");
 
-const size_t PostRenderIndex = 88;
+const size_t PostRenderIndex = 89;
 const auto vmtPostRender  = *reinterpret_cast<uintptr_t***>(AthenaGameViewportClient) + PostRenderIndex;
 ```
 #### PostRender hook
