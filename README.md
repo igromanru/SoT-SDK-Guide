@@ -21,7 +21,7 @@
 [SoT SDK Dump](https://github.com/pubgsdk/SoT-SDK)  
 
 ## FindPattern Signatures
-**v2.0.20 Microsoft Store and Steam compatible**
+**v2.2.0.2 Microsoft Store and Steam compatible**
 ```
 GObjects:
 89 0D ? ? ? ? 48 8B DF 48 89 5C 24
