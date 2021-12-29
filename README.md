@@ -21,7 +21,7 @@
 [SoT SDK Dump](https://github.com/pubgsdk/SoT-SDK)  
 
 ## FindPattern Signatures
-**v2.2.0.2 Microsoft Store and Steam compatible**
+**v2.4.0 Microsoft Store and Steam compatible**
 ```
 GObjects:
 89 0D ? ? ? ? 48 8B DF 48 89 5C 24
@@ -81,7 +81,7 @@ class ULevelActorContainer*                        ActorCluster;                
 ```cpp
 auto AthenaGameViewportClient = UObject::FindObject<UAthenaGameViewportClient>("AthenaGameViewportClient Transient.AthenaGameEngine_1.AthenaGameViewportClient_1");
 
-const size_t PostRenderIndex = 89;
+const size_t PostRenderIndex = 91;
 const auto vmtPostRender  = *reinterpret_cast<uintptr_t***>(AthenaGameViewportClient) + PostRenderIndex;
 ```
 #### PostRender hook
